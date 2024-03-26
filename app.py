@@ -1,7 +1,7 @@
 from PIL import Image
 import numpy as np
 img = Image.open('image.jpg')
-new_width = 100
+new_width = 200
 new_height = int(img.size[1] * (new_width / img.size[0]))
 resized_img = img.resize((new_width, new_height))
 gray_image = resized_img.convert('L')
